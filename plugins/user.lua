@@ -9,4 +9,18 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+
+  "navarasu/onedark.nvim",
+  {
+    "navarasu/onedark.nvim",
+    config = function()
+      require('onedark').setup {
+        colors = {
+          bg1 = "#282c34",
+          bg2 = "#282c34"
+        },
+      }
+      require('onedark').load()
+    end,
+  },
 }
